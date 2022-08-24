@@ -1,6 +1,6 @@
 {
   "name": "dummy",
-  "homepage": "https://reacttask.github.io",
+  "homepage": "https://emnjtech.github.io/reacttask",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,8 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "web": "npm start"
   },
   "eslintConfig": {
     "extends": [
