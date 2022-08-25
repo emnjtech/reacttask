@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
+
 html{
   font-family: 'Inter', sans-serif;
 }
@@ -8,6 +9,8 @@ html{
   margin: 0;
   padding: 0;
 }
+
+/*--------Body button-------*/
 button{
   padding: 15px ;
   width: 100%;
@@ -17,13 +20,15 @@ button{
   border:none;
   border-radius: 4px;
 }
+
+/*------------the envelop div of the entire application ---------*/
 .wrapper {
   width: 100%;
 margin: 0%;
 padding: 0%;
 }
 
-
+/*------------the envelop div of the entire form area ---------*/
 .dataSide{
   width: 65%;
   background-color: white;
@@ -33,11 +38,7 @@ padding: 0%;
     background-size: 120px;
 }
 
-.step{
-  max-width: 100%;
-  padding: 20px;
-  background-color: white;
-}
+/*------------the envelop div of the form ---------*/
 .registerAndLogin{
   width:60%;
   padding-bottom: 100px;
@@ -48,6 +49,7 @@ padding: 0%;
 
   padding-right: 50px;
 }
+/*------------body H1 ---------*/
  h1{
   font-size:20px;
  font-weight: 600;
@@ -57,6 +59,7 @@ padding: 0%;
 
   
 }
+/*------------the "already have an account?" div ---------*/
 .accountInstr{
   font-size:10px;
   padding-bottom:25px;
@@ -71,6 +74,7 @@ color: #2E73F6;
 
 
 }
+/*------------the "terms and condition paragraph" div ---------*/
 .terms{
   font-size:9px;
   padding-bottom:25px;
@@ -87,6 +91,7 @@ color: #2E73F6;
   
   
   }
+  /*------------The entire Dummy text area---------*/
 .dummySide{
   width: 35%;
   background-color: #2E73F6;
@@ -96,6 +101,7 @@ color: #2E73F6;
   background-position: right;
   background-size: 120px;
 }
+/*------------The content of the Dummy text area---------*/
 .dummyContent{
   padding-top: 250px;
   padding-left: 100px;
@@ -123,15 +129,17 @@ font-size: 12px;
 
 
 
-
+/*------------Input div---------*/
 .InputTxt {
   position: relative;
 
 }
+/*------------The label when the input element is not on Focus---------*/
 .noFocusLabel {
   display: none;
  
 }
+/*------------The label when the input element is on Focus---------*/
 .focusLabel {
   position: absolute;
   top: -1px;
@@ -143,6 +151,7 @@ animation: moveLabel 0.3s;
 color:rgb(141, 138, 138)
 }
 
+/*------------Input element in the input div---------*/
 .InputTxt>input{
 
     width: 100%;
@@ -156,6 +165,63 @@ color:rgb(141, 138, 138)
     font-size: 10px; 
     color: #4c4b4b;
 }
+/*------------Input div when there's an error---------*/
+.InputTxtError{
+  position: relative;
+  margin-bottom: 6px;
+}
+/*------------Input element when there's an error---------*/
+.InputTxtError>input{
+
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px #9e0000;
+  background-color: transparent;
+  border-radius: 4px;
+  outline: red solid 1px;
+  font-size: 10px;
+
+  
+}
+
+/*------------Paragraph element when for displaying error---------*/
+.errorP{
+
+ color:#ff0000;
+  font-size: 8px;
+  margin-bottom: 10px;
+}
+/*------------Paragraph element when there's no error---------*/
+.noErrorP{
+
+  color:#626262;
+   font-size: 8px;
+   margin-bottom: 10px;
+ }
+/*------------The label of the input element when there's no error---------*/
+ .InputTxtError>label{
+
+  color:#ff0000;
+   font-size: 10px;
+   
+ }
+
+
+/*------------Body label element---------*/
+label {
+  font-size: 10px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+.form-control {
+  box-shadow: none !important;
+
+}
+
+/*------------Input element icons---------*/
 .inputIcon {
   width: 15px;
   position: absolute;
@@ -163,12 +229,11 @@ color:rgb(141, 138, 138)
   right:9px;
 }
 
+/*------------For select---------*/
 .selectStyle {
   border: 2px double red;
   position: relative;
 }
-
-
 
 .SelectInput {
   color:#6d6c6c;
@@ -200,40 +265,6 @@ color: #6d6c6c;
 }
 
 
-
-
-.InputTxtError{
-  position: relative;
-  margin-bottom: 6px;
-}
-.InputTxtError>input{
-
-  width: 100%;
-  padding: 12px 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px #9e0000;
-  background-color: transparent;
-  border-radius: 4px;
-  outline: red solid 1px;
-  font-size: 10px;
-
-  
-}
-
-
-.errorP{
-
- color:#ff0000;
-  font-size: 8px;
-  margin-bottom: 10px;
-}
-.noErrorP{
-
-  color:#626262;
-   font-size: 8px;
-   margin-bottom: 10px;
- }
 .submitBtn{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -243,26 +274,8 @@ button:disabled{
   background-color: #e0dfdf;
 }
 
-.InputTxtError>label{
 
-  color:#ff0000;
-   font-size: 10px;
-   
- }
-
-
-
-label {
-  font-size: 10px;
-  font-weight: 500;
-  display: inline-block;
-  margin-bottom: .5rem;
-}
-.form-control {
-  box-shadow: none !important;
-
-}
-
+/*------------Responsive design & screen size management---------*/
 @media screen and (max-width: 768px) {
 
   .container {
@@ -365,31 +378,7 @@ label {
 
   }
 }
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-  border: 1px solid red;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
+/*------------Keyframe for label animation---------*/
 @keyframes moveLabel{
   from {top: 20px;}
   to {top: -1px;}

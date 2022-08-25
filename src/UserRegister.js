@@ -21,6 +21,7 @@ export default function UserRegister() {
   const onPwdFocus = () => setShowPwd(true);
   const [btnEnable,setBtnEnable] = useState(false)
   const [eyeToggle,setEyeToggle] = useState(false)
+  
   function checkEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
   }
@@ -75,16 +76,14 @@ const handleChangeName = (e)=>{
 
   const handleNext = (e)=>{
     e.preventDefault()
-    setSelectOptn("")
-    setPwdInput("")
-    setNameInput("")
-    setEmailInput("")
     alert("Thank you for checking out my Developer task")
   }
 
 useEffect(()=>{
 const btnFunction = () =>{
- if (nameInput?.trim().length === 0 || emailInput?.trim().length === 0 ||pwdInput?.trim().length === 0 || selectOptn === "" || nameError === true || pwdError === true || error === true)
+ if (nameInput?.trim().length === 0 || emailInput?.trim().length === 0 
+ ||pwdInput?.trim().length === 0 || selectOptn === "" || nameError === true 
+ || pwdError === true || error === true)
     {
       setBtnEnable(false)
       console.log(btnEnable)
@@ -99,6 +98,8 @@ console.log(selectOptn)
 console.log(btnEnable)
 //eslint-disable-next-line
 },[nameInput,emailInput,pwdInput,selectOptn,nameError,pwdError,error])
+
+
 
   return (
     <div className='wrapper'>
@@ -166,6 +167,7 @@ console.log(btnEnable)
 
 
     </div>
+
     </div>
   )
 }
