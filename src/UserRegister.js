@@ -144,7 +144,7 @@ console.log(btnEnable)
 
                 <div className={pwdError? 'InputTxtError':'InputTxt'}>
                 <label className={showPwd? 'focusLabel' : 'noFocusLabel'}>Password</label>
-                <input type={!eyeToggle? 'password' : 'text'} placeholder={!showPwd? 'Password' : ''} onFocus={onPwdFocus} onChange={handleChangePwd} />
+                <input type={!eyeToggle? 'text' : 'password'} placeholder={!showPwd? 'Password' : ''} onFocus={onPwdFocus} onChange={handleChangePwd} />
                 <img src={!eyeToggle? eye : eyex} alt="eye" className='inputIcon' onClick={(()=>setEyeToggle(!eyeToggle))}/>
                 <p className={pwdError? 'errorP' : 'noErrorP'}>Minimum of 8 characters</p>
                 </div>
